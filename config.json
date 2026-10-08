@@ -1,0 +1,115 @@
+{
+  "profesional": {
+    "nombre": "Gabriela E. Ríos",
+    "profesion": "Licenciada en Nutrición",
+    "matricula": "MN 2921  ·  Colegio Nut. 2178",
+    "direccion": "Lacroze 6103 - Villa Ballester",
+    "telefono": "15-5828-6145",
+    "email": "gabrielaerios@gmail.com"
+  },
+  "tarjeta": {
+    "ancho": 1200,
+    "alto": 920,
+    "fondo": "assets/fondo.jpg",
+    "foto": null,
+    "fuente": "Fira Sans Condensed",
+    "color": "#1f2a24",
+    "rotacion": 0,
+    "mezcla": "multiply"
+  },
+  "campos": [
+    {
+      "texto": "Paciente:",
+      "x": 288,
+      "y": 456,
+      "size": 37
+    },
+    {
+      "texto": "{paciente}",
+      "x": 446,
+      "y": 448,
+      "size": 41,
+      "upper": true,
+      "fit": 450
+    },
+    {
+      "linea": 448,
+      "x": 440,
+      "y": 461
+    },
+    {
+      "texto": "Fecha:",
+      "x": 288,
+      "y": 512,
+      "size": 37
+    },
+    {
+      "texto": "{fecha}",
+      "x": 446,
+      "y": 504,
+      "size": 41,
+      "upper": true,
+      "fit": 450
+    },
+    {
+      "linea": 448,
+      "x": 440,
+      "y": 517
+    },
+    {
+      "texto": "Hora:",
+      "x": 288,
+      "y": 568,
+      "size": 37
+    },
+    {
+      "texto": "{hora} hs",
+      "x": 446,
+      "y": 560,
+      "size": 41
+    },
+    {
+      "linea": 448,
+      "x": 440,
+      "y": 573
+    },
+    {
+      "texto": "Consultorio: {direccion}",
+      "x": 288,
+      "y": 632,
+      "size": 31,
+      "fit": 590
+    },
+    {
+      "linea": 600,
+      "x": 288,
+      "y": 645
+    },
+    {
+      "texto": "WhatsApp: {telefono}",
+      "x": 588,
+      "y": 697,
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "texto": "Email: {email}",
+      "x": 588,
+      "y": 735,
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "texto": "{matricula}",
+      "x": 588,
+      "y": 778,
+      "size": 29,
+      "weight": 500,
+      "spacing": 1,
+      "align": "center",
+      "color": "#2f5d3a"
+    }
+  ],
+  "mensaje": "Hola {paciente}! Te recuerdo tu turno el {fecha} a las {hora} hs en {direccion}. Lic. Gabriela E. Ríos",
+  "archivo": "turno-{paciente}.png"
+}

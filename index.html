@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f5d3a">
+  <title>Turnos · Gabriela E. Ríos</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <style>
+    :root { --acc:#2f5d3a; --bg:#f5f0e4; --fg:#1e2a22; --line:#d9cfb8; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:'Fira Sans Condensed', system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+    main { max-width:480px; margin:0 auto; padding:16px; }
+    h1 { font-weight:600; font-size:1.4rem; letter-spacing:.5px; margin:4px 0 16px; padding:12px 16px; background:var(--acc); color:#f5f0e4; border-radius:10px; }
+    label { display:block; font-size:.85rem; font-weight:600; margin:12px 0 4px; }
+    input { width:100%; padding:12px; font:inherit; font-size:1rem; border:1px solid var(--line); border-radius:10px; background:#fff; }
+    .row { display:flex; gap:12px; } .row > div { flex:1; }
+    canvas { width:100%; height:auto; margin:16px 0; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.12); background:#fff; }
+    button { width:100%; padding:14px; font:inherit; font-weight:700; font-size:1rem; border:0; border-radius:10px; cursor:pointer; margin-bottom:10px; }
+    #share { background:#25d366; color:#fff; }
+    #download { background:#fff; color:var(--fg); border:1px solid var(--line); }
+    button:disabled { opacity:.5; cursor:not-allowed; }
+    #msg { font-size:.85rem; min-height:1.2em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Turnos</h1>
+    <label for="paciente">Nombre y apellido del paciente</label>
+    <input id="paciente" autocomplete="off" autocapitalize="words" placeholder="Ej: María Pérez">
+    <div class="row">
+      <div><label for="fecha">Fecha</label><input id="fecha" type="date"></div>
+      <div><label for="hora">Hora</label><input id="hora" type="time" step="900"></div>
+    </div>
+    <canvas id="card"></canvas>
+    <button id="share" disabled>Enviar por WhatsApp</button>
+    <button id="download" disabled>Descargar imagen</button>
+    <div id="msg"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
